@@ -9,7 +9,8 @@ namespace OOPApp2
     {
         static void Main(string[] args)
         {
-            // Part01
+
+            #region Part01
 
             #region Question01
             //a) Problems with the Design (Encapsulation)
@@ -84,6 +85,7 @@ namespace OOPApp2
             //b)
             //No, a static method cannot access Item directly.
             //This is because Item belongs to a specific object (instance), while a static method belongs to the class. 
+            #endregion 
             #endregion
 
 
