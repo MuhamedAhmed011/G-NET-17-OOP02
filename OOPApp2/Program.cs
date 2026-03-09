@@ -74,6 +74,18 @@ namespace OOPApp2
             //Example: A class may allow access by index or by name in a student system. 
             #endregion
 
+            #region Question04
+            //a)
+            //The static keyword means the variable belongs to the class itself.
+            //TotalOrders is shared by all Order objects
+            //so every time a new order is created the same variable increases.
+            //The Item field is not static, so each object has its own Item value.
+
+            //b)
+            //No, a static method cannot access Item directly.
+            //This is because Item belongs to a specific object (instance), while a static method belongs to the class. 
+            #endregion
+
 
         }
     }
