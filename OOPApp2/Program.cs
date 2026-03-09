@@ -1,4 +1,7 @@
-﻿using System.ComponentModel;
+﻿using Microsoft.Win32;
+using System;
+using System.ComponentModel;
+using System.Reflection;
 
 namespace OOPApp2
 {
@@ -51,6 +54,24 @@ namespace OOPApp2
             //        get { return Width * Height; }
             //    }
             //} 
+            #endregion
+
+            #region Question03
+            //a) 
+            //It is called an Indexer in C#.
+            //It allows objects of the class to be accessed like an array using an index.
+            //In this example, it allows accessing student names like this:
+            //register[0] = "Ali";
+
+            //b)
+            //Using index 10 will cause an IndexOutOfRangeException.
+            //To make it safer:Add a check to ensure the index is within the valid range.
+            //if (index >= 0 && index < names.Length) => names[index] = value;
+
+            //c)
+            //Yes, a class can have multiple indexers.
+            //They can use different parameter types or numbers of parameters.
+            //Example: A class may allow access by index or by name in a student system. 
             #endregion
 
 
