@@ -1,4 +1,6 @@
-﻿namespace OOPApp2
+﻿using System.ComponentModel;
+
+namespace OOPApp2
 {
     internal class Program
     {
@@ -28,6 +30,27 @@
             //They make it hard to control or validate data.
 
             //They can lead to errors  data in the program. 
+            #endregion
+
+            #region Question02
+            //Difference Between Field and Property in C#
+            //Field: A variable that directly stores data inside a class.
+            //Property: A member that provides controlled access to a field using get and set.
+
+            //Can a Property Contain Logic?
+            //Yes, a property can include logic inside the get or set methods
+
+            //Example
+            //class Rectangle
+            //{
+            //    public double Width;
+            //    public double Height;
+
+            //    public double Area
+            //    {
+            //        get { return Width * Height; }
+            //    }
+            //} 
             #endregion
 
 
