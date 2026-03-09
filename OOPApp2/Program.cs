@@ -5,6 +5,28 @@ using System.Reflection;
 
 namespace OOPApp2
 {
+    //public enum TicketType
+    //{
+    //    Standard,
+    //    VIP,
+    //    IMAX
+    //}
+    //public struct SeatLocation
+    //{
+    //    public char Row { get; set; }
+    //    public int Number { get; set; }
+
+    //    public SeatLocation(char row, int number)
+    //    {
+    //        Row = row;
+    //        Number = number;
+    //    }
+
+    //    public override string ToString()
+    //    {
+    //        return $"{Row}{Number}";
+    //    }
+    //}
     internal class Program
     {
         static void Main(string[] args)
@@ -85,9 +107,93 @@ namespace OOPApp2
             //b)
             //No, a static method cannot access Item directly.
             //This is because Item belongs to a specific object (instance), while a static method belongs to the class. 
-            #endregion 
+            #endregion
             #endregion
 
+            #region Part02
+            //Cinema cinema = new Cinema();
+
+            //Console.WriteLine("======== Ticket Booking ========");
+            //Console.WriteLine();
+
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine($"Enter data for Ticket {i + 1}:");
+
+            //    Console.Write("Movie Name: ");
+            //    string movieName = Console.ReadLine();
+
+            //    Console.Write("Ticket Type (0=Standard, 1=VIP, 2=IMAX): ");
+            //    TicketType type = (TicketType)int.Parse(Console.ReadLine());
+
+            //    Console.Write("Seat Row (A-Z): ");
+            //    char row = char.Parse(Console.ReadLine().ToUpper());
+
+            //    Console.Write("Seat Number: ");
+            //    int number = int.Parse(Console.ReadLine());
+
+            //    Console.Write("Price: ");
+            //    double price = double.Parse(Console.ReadLine());
+
+            //    Ticket ticket = new Ticket(movieName, type, new SeatLocation(row, number), price);
+            //    cinema.AddTicket(ticket);
+
+            //    Console.WriteLine();
+            //}
+
+            //Console.WriteLine("-------- All Tickets --------");
+            //Console.WriteLine();
+
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Ticket t = cinema[i];
+
+            //    if (t != null)
+            //    {
+            //        Console.WriteLine(
+            //            $"Ticket #{t.TicketId} | {t.MovieName} | {t.Type} | Seat: {t.Seat} | Price: {t.Price} EGP | After Tax: {t.PriceAfterTax} EGP"
+            //        );
+            //    }
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine("-------- Search by Movie --------");
+            //Console.WriteLine();
+
+            //Console.Write("Enter movie name to search: ");
+            //string searchName = Console.ReadLine();
+
+            //Ticket foundTicket = cinema[searchName];
+
+            //if (foundTicket != null)
+            //{
+            //    Console.WriteLine(
+            //        $"Found: Ticket #{foundTicket.TicketId} | {foundTicket.MovieName} | {foundTicket.Type} | Seat: {foundTicket.Seat} | Price: {foundTicket.Price} EGP"
+            //    );
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Movie not found.");
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine("-------- Statistics --------");
+            //Console.WriteLine();
+
+            //Console.WriteLine("Total Tickets Sold: " + Ticket.GetTotalTicketsSold());
+            //Console.WriteLine();
+
+            //string bookingRef1 = BookingHelper.GenerateBookingReference();
+            //string bookingRef2 = BookingHelper.GenerateBookingReference();
+
+            //Console.WriteLine("Booking Reference 1: " + bookingRef1);
+            //Console.WriteLine("Booking Reference 2: " + bookingRef2);
+            //Console.WriteLine();
+
+            //double discountedTotal = BookingHelper.CalcGroupDiscount(5, 80);
+            //Console.WriteLine("Group Discount (5 tickets x 80 EGP): " + discountedTotal + " EGP");
+
+            #endregion        
 
         }
     }
